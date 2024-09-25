@@ -30,6 +30,8 @@ class Solution:
         maxTime, maxTraffic = max(traffic.items(), key=lambda x: x[1])
         return(maxTime,maxTraffic)
 
+#not the most optimal solution: O(n * R)
+
 #Test cases:
 times = [ #should be (5,4)
     (1, 5),  # Process 1: starts at 1, ends at 5
