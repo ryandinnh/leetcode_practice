@@ -12,7 +12,7 @@ class Solution(object):
 
         for i in range(len(s)):
             leftSeen.add(s[i])
-            leftCounts[i] = len(leftSeen)
+            leftCounts[i] = len(leftSeen) #append on how many unique units from begining to index i
 
         for i in range(len(s) - 1, -1, -1): #going in reverse
            rightSeen.add(s[i])
