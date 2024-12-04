@@ -12,7 +12,7 @@ class Solution:
         #space and time complexity o(n)
         """   
         slopes = []
-        carPairs = [(p,s) for p, s in zip(position, speed)]
+        carPairs = [(p,s) for p, s in zip(position, speed)] #this zip function really useful
         carPairs.sort(reverse = True) #reverse sort to process cars from closest to target to farthest
 
         for p, s in carPairs:
